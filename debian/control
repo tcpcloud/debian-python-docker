@@ -2,7 +2,7 @@ Source: docker-py
 Maintainer: Filip Pytloun <filip.pytloun@tcpcloud.eu>
 Section: python
 Priority: optional
-Build-Depends: python-setuptools (>= 0.6b3), python-all (>= 2.6.6-3), debhelper (>= 9), dh-python, python-pbr
+Build-Depends: python-setuptools (>= 0.6b3), python-all (>= 2.6.6-3), debhelper (>= 9), dh-python, python-pbr, python-websocket (>= 0.11.0), python-requests (>= 2.5.3), python-six (>= 1.3.0)
 Standards-Version: 3.9.1
 
 Package: python-docker-py

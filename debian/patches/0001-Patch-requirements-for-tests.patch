@@ -1,0 +1,63 @@
+From: Filip Pytloun <filip@pytloun.cz>
+Date: Sun, 28 Jun 2015 17:03:12 +0200
+Subject: Patch requirements for tests
+
+---
+ docker_py.egg-info/requires.txt | 4 ++--
+ requirements.txt                | 4 ++--
+ requirements3.txt               | 2 +-
+ setup.py                        | 2 +-
+ test-requirements.txt           | 4 ++--
+ 5 files changed, 8 insertions(+), 8 deletions(-)
+
+diff --git a/docker_py.egg-info/requires.txt b/docker_py.egg-info/requires.txt
+index 3cd7ca1..6a2dfce 100644
+--- a/docker_py.egg-info/requires.txt
++++ b/docker_py.egg-info/requires.txt
+@@ -1,3 +1,3 @@
+-requests >= 2.5.2
++requests
+ six >= 1.3.0
+-websocket-client >= 0.11.0
+\ No newline at end of file
++websocket-client >= 0.11.0
+diff --git a/requirements.txt b/requirements.txt
+index a1c3aa5..acbdf46 100644
+--- a/requirements.txt
++++ b/requirements.txt
+@@ -1,3 +1,3 @@
+-requests==2.5.3
++requests
+ six>=1.3.0
+-websocket-client==0.11.0
++websocket-client>=0.11.0
+diff --git a/requirements3.txt b/requirements3.txt
+index 9666476..e2f9f6b 100644
+--- a/requirements3.txt
++++ b/requirements3.txt
+@@ -1,2 +1,2 @@
+-requests==2.5.3
++requests
+ six>=1.3.0
+diff --git a/setup.py b/setup.py
+index 6000e6f..7970050 100644
+--- a/setup.py
++++ b/setup.py
+@@ -7,7 +7,7 @@ ROOT_DIR = os.path.dirname(__file__)
+ SOURCE_DIR = os.path.join(ROOT_DIR)
+ 
+ requirements = [
+-    'requests >= 2.5.2',
++    'requests',
+     'six >= 1.3.0',
+ ]
+ 
+diff --git a/test-requirements.txt b/test-requirements.txt
+index 969f7a2..9630766 100644
+--- a/test-requirements.txt
++++ b/test-requirements.txt
+@@ -1,2 +1,2 @@
+-mock==1.0.1
+-coverage==3.7.1
++mock>=1.0.1
++coverage>=3.7.1

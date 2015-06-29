@@ -1,0 +1,2 @@
+version=3
+http://pypi.debian.net/docker-py/docker-py-([\.0-9]*)\.tar\.gz

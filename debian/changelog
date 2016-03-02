@@ -1,4 +1,4 @@
-docker-py (1.2.3-0tcp1) trusty; urgency=low
+docker-py (1.2.3-0tcp1) jessie; urgency=low
 
   * source package automatically created by stdeb 0.8.2
 

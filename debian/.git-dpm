@@ -1,0 +1,11 @@
+# see git-dpm(1) from git-dpm package
+06f1e6fdcf6eb6a33f067d2b35ccc5c84cdbfaf5
+06f1e6fdcf6eb6a33f067d2b35ccc5c84cdbfaf5
+0db60a1e341b25c36bebb5903f0ce87126d7eee4
+0db60a1e341b25c36bebb5903f0ce87126d7eee4
+python-docker_1.5.0.orig.tar.gz
+7361340e76f08ab6b9f6ab33c67fbe9f45dbeef4
+59883
+debianTag="debian/%e%v"
+patchedTag="patched/%e%v"
+upstreamTag="upstream/%e%u"

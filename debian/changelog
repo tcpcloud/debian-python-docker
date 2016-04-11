@@ -1,0 +1,114 @@
+python-docker (1.8.0-0ubuntu1) xenial; urgency=medium
+
+  * Update to 1.8.0 upstream release.
+    - Dropped d/p/0002-Fix-Unix-adapter-bug-with-newer-versions-of-requests.patch
+      Applied upstream.
+
+ -- Pierre-André MOREY <pierre-andre.morey@canonical.com>  Mon, 11 Apr 2016 17:11:12 +0200
+
+python-docker (1.5.0-1) unstable; urgency=medium
+
+  * Update to 1.5.0 upstream release.
+
+ -- Tianon Gravi <tianon@debian.org>  Sun, 08 Nov 2015 12:59:38 -0800
+
+python-docker (1.3.1-1) unstable; urgency=medium
+
+  * Update to 1.3.1 upstream release.
+
+ -- Tianon Gravi <admwiggin@gmail.com>  Tue, 28 Jul 2015 13:25:20 -0700
+
+python-docker (1.3.0-2) unstable; urgency=medium
+
+  * Update 01_requirements.patch to reflect that the requirements are actually
+    stored in no less than three separate files (Closes: #793024).
+  * Add a DEP8 test that runs upstream's integration tests to verify
+    basic functionality.
+  * Patch the default API version down one notch to match src:docker.io (to be
+    removed when Docker 1.7+ gets into the archive).
+
+ -- Tianon Gravi <admwiggin@gmail.com>  Mon, 20 Jul 2015 18:03:45 +0000
+
+python-docker (1.3.0-1) unstable; urgency=medium
+
+  * Update to 1.3.0 upstream release.
+
+ -- Tianon Gravi <admwiggin@gmail.com>  Thu, 16 Jul 2015 18:00:39 +0000
+
+python-docker (1.2.3-1) unstable; urgency=medium
+
+  * Update to 1.2.3 upstream release (Closes: #790817).
+
+ -- Tianon Gravi <admwiggin@gmail.com>  Thu, 02 Jul 2015 02:25:42 +0000
+
+python-docker (1.2.2-2) unstable; urgency=medium
+
+  * Relax requests dependency slightly to account for the accidental misupload
+    to unstable.
+
+ -- Tianon Gravi <admwiggin@gmail.com>  Sun, 29 Mar 2015 19:58:18 -0600
+
+python-docker (1.2.2-1) unstable; urgency=medium
+
+  * Update to 1.2.2 upstream release (Closes: #781355)
+  * Update debian/watch to use the pypi.debian.net redirector
+  * Update Build-Depends, 01_requirements.patch, and comment in debian/rules
+    regarding tests
+
+ -- Tianon Gravi <admwiggin@gmail.com>  Sun, 29 Mar 2015 19:58:18 -0600
+
+python-docker (0.5.3-2) unstable; urgency=medium
+
+  * Remove 02_use-system-urllib3.patch thanks to the fix in requests
+
+ -- Tianon Gravi <admwiggin@gmail.com>  Thu, 13 Nov 2014 06:29:26 +0000
+
+python-docker (0.5.3-1.1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Added debian/patches/02_use-system-urllib3.patch (Closes: #767445).
+  * Renamed debian/patches/requirements.patch to
+    debian/patches/01_requirements.patch following convention from other
+    Python packages.
+
+ -- Jakub Warmuz <jakub@warmuz.org>  Sat, 01 Nov 2014 18:19:57 +0100
+
+python-docker (0.5.3-1) unstable; urgency=medium
+
+  * Update to 0.5.3 upstream release
+    - 0.5.3: Fixed attaching when connecting to the daemon over a UNIX socket.
+    - 0.5.2: Fixed a bug where sockets were closed immediately when attaching
+             over TLS.
+
+ -- Tianon Gravi <admwiggin@gmail.com>  Fri, 17 Oct 2014 06:12:19 +0000
+
+python-docker (0.5.1-1) unstable; urgency=medium
+
+  * Update to 0.5.1 upstream release
+
+ -- Tianon Gravi <admwiggin@gmail.com>  Thu, 16 Oct 2014 07:05:26 +0000
+
+python-docker (0.5.0-1) unstable; urgency=medium
+
+  * Update to 0.5.0 upstream release
+
+ -- Tianon Gravi <admwiggin@gmail.com>  Sun, 14 Sep 2014 00:56:13 +0000
+
+python-docker (0.4.0-1) unstable; urgency=medium
+
+  * Update to 0.4.0 upstream release
+
+ -- Tianon Gravi <admwiggin@gmail.com>  Mon, 28 Jul 2014 10:43:40 -0600
+
+python-docker (0.3.2-1) unstable; urgency=medium
+
+  * Update to 0.3.2 upstream release
+  * Bump Standards-Version to 3.9.5
+
+ -- Tianon Gravi <admwiggin@gmail.com>  Thu, 17 Jul 2014 21:51:51 -0400
+
+python-docker (0.2.3-1) unstable; urgency=low
+
+  * Initial release (Closes: #734679)
+
+ -- Paul Tagliamonte <paultag@debian.org>  Mon, 10 Feb 2014 22:13:24 -0500

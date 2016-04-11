@@ -1,0 +1,72 @@
+From 45baca4b0272e2840e041d822315cf15f1343d49 Mon Sep 17 00:00:00 2001
+From: Tianon Gravi <tianon@debian.org>
+Date: Sun, 8 Nov 2015 10:36:49 -0800
+Subject: Unpin dependencies so newer versions satisfy them appropriately
+
+Forwarded: https://github.com/dotcloud/docker-py/issues/101 (upstream has no interest)
+
+Patch-Name: requirements.patch
+---
+ docker_py.egg-info/requires.txt |  4 ++--
+ requirements.txt                |  4 ++--
+ setup.py                        |  4 ++--
+ test-requirements.txt           | 10 +++++-----
+ 4 files changed, 11 insertions(+), 11 deletions(-)
+
+Index: Ubuntu-1.8.0/docker_py.egg-info/requires.txt
+===================================================================
+--- Ubuntu-1.8.0.orig/docker_py.egg-info/requires.txt
++++ Ubuntu-1.8.0/docker_py.egg-info/requires.txt
+@@ -1,6 +1,6 @@
+-requests >= 2.5.2
++requests >= 2.5.3
+ six >= 1.4.0
+-websocket-client >= 0.32.0
++websocket-client >= 0.18.0
+ 
+ [:python_version < "3"]
+ py2-ipaddress >= 3.4.1
+Index: Ubuntu-1.8.0/requirements.txt
+===================================================================
+--- Ubuntu-1.8.0.orig/requirements.txt
++++ Ubuntu-1.8.0/requirements.txt
+@@ -1,4 +1,4 @@
+-requests==2.5.3
++requests>=2.5.3
+ six>=1.4.0
+-websocket-client==0.32.0
++websocket-client>=0.18.0
+ py2-ipaddress==3.4.1 ; python_version < '3.2'
+\ No newline at end of file
+Index: Ubuntu-1.8.0/setup.py
+===================================================================
+--- Ubuntu-1.8.0.orig/setup.py
++++ Ubuntu-1.8.0/setup.py
+@@ -7,9 +7,9 @@ ROOT_DIR = os.path.dirname(__file__)
+ SOURCE_DIR = os.path.join(ROOT_DIR)
+ 
+ requirements = [
+-    'requests >= 2.5.2',
++    'requests >= 2.5.3',
+     'six >= 1.4.0',
+-    'websocket-client >= 0.32.0',
++    'websocket-client >= 0.18.0',
+ ]
+ 
+ extras_require = {
+Index: Ubuntu-1.8.0/test-requirements.txt
+===================================================================
+--- Ubuntu-1.8.0.orig/test-requirements.txt
++++ Ubuntu-1.8.0/test-requirements.txt
+@@ -1,5 +1,5 @@
+-mock==1.0.1
+-pytest==2.7.2
+-coverage==3.7.1
+-pytest-cov==2.1.0
+-flake8==2.4.1
+\ No newline at end of file
++mock>=1.0.1
++pytest>=2.7.2
++coverage>=3.7.1
++pytest-cov>=2.1.0
++flake8>=2.4.1

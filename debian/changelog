@@ -1,3 +1,9 @@
+docker-py (1.2.3-0tcp2) trusty; urgency=medium
+
+  * Fix package name
+
+ -- Filip Pytloun <filip@pytloun.cz>  Mon, 18 Jul 2016 09:47:29 +0200
+
 docker-py (1.2.3-0tcp1) jessie; urgency=low
 
   * source package automatically created by stdeb 0.8.2

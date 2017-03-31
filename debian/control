@@ -33,7 +33,7 @@ X-Python3-Version: >= 3.3
 
 Package: python-docker
 Architecture: all
-Depends: ${misc:Depends}, ${python:Depends}
+Depends: ${misc:Depends}, ${python:Depends}, python-ipaddress
 Description: Python wrapper to access docker.io's control socket
  This package contains oodles of routines that aid in controling
  docker.io over it's socket control, the same way the docker.io

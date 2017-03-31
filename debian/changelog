@@ -1,3 +1,9 @@
+python-docker (1.8.0-0ubuntu1+mir1) xenial; urgency=medium
+
+  * Fix ipaddress dependency
+
+ -- Filip Pytloun <filip@pytloun.cz>  Fri, 31 Mar 2017 16:59:16 +0200
+
 python-docker (1.8.0-0ubuntu1) xenial; urgency=medium
 
   * Update to 1.8.0 upstream release.
